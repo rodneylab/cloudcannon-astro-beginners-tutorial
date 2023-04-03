@@ -5,13 +5,13 @@
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
 collections_config: {
-  blog: 
+  blog: {
   path: 'src/content/blog',
   parser: 'front-matter',
   url: (filePath, parsed, {filters}) => {
     const slug = filePath.split('/').at(-1);
     return `/${slug}
-  }
+  }}
 }
 
 # Control which collections are displayed in the CloudCannon site navigation,
