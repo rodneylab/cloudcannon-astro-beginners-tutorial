@@ -6,7 +6,8 @@
 # CloudCannon configuration specific to those collections.
 collections_config: {
   posts: {
-    path: 'content/blog'
+    path: 'content/blog',
+    parser: 'front-matter'
   }
 }
 
