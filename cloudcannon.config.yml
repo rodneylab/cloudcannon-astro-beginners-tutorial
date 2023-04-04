@@ -19,7 +19,7 @@ collection_groups:
 data_config: {
   contacts: {
     path: 'src/data/contacts.json',
-    parser: 'json'
+    parser: 'json',
     url: '/contact'
   }
 }
