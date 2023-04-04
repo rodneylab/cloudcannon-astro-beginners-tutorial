@@ -5,7 +5,9 @@
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
 collections_config: {
-
+  posts: {
+    path: 'content/blog'
+  }
 }
 
 # Control which collections are displayed in the CloudCannon site navigation,
