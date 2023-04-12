@@ -3,11 +3,15 @@ import Menu from "~/components/Menu";
 import "~styles/global.css";
 
 export interface Props {
-  title: string;
-  description: string;
+  frontmatter: {
+    title: string;
+    description: string;
+  };
 }
 
-const { description, title }: Props = Astro.props;
+const {
+  frontmatter: { description, title },
+}: Props = Astro.props;
 ---
 
 <html lang="en">
@@ -28,7 +32,9 @@ const { description, title }: Props = Astro.props;
     </div>
   </header>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
   <footer>
     <div class="footer-wrapper"><a href="/about">About Novelty Cycles</a></div>

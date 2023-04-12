@@ -78,6 +78,33 @@ body {
   color: var(--colour-dark);
 }
 
+header {
+  display: flex;
+  background-color: var(--colour-brand);
+  color: var(--colour-light);
+  padding-block: var(--spacing-4);
+  margin-bottom: var(--spacing-12);
+}
+
+header a {
+  color: inherit;
+}
+
+.header-wrapper {
+  width: calc(var(--max-width-full) - var(--spacing-12));
+  margin-inline: var(--spacing-6);
+}
+
+@media screen and (min-width: 48rem) {
+  .header-wrapper {
+    width: min(
+      var(--max-width-full) - var(--spacing-24),
+      var(--max-width-wrapper)
+    );
+    margin-inline: auto;
+  }
+}
+
 main {
   min-height: 100vh;
   width: calc(var(--max-width-full) - var(--spacing-12));
@@ -86,6 +113,33 @@ main {
 
 @media screen and (min-width: 48rem) {
   main {
+    width: min(
+      var(--max-width-full) - var(--spacing-24),
+      var(--max-width-wrapper)
+    );
+    margin-inline: auto;
+  }
+}
+
+footer {
+  background-color: var(--colour-alt);
+  padding-block: var(--spacing-8);
+  font-size: var(--font-size-2);
+}
+
+footer a {
+  color: inherit;
+}
+
+.footer-wrapper {
+  display: grid;
+  place-items: center;
+  width: calc(var(--max-width-full) - var(--spacing-12));
+  margin-inline: var(--spacing-6);
+}
+
+@media screen and (min-width: 48rem) {
+  .footer-wrapper {
     width: min(
       var(--max-width-full) - var(--spacing-24),
       var(--max-width-wrapper)
