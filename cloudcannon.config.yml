@@ -12,7 +12,11 @@ collections_config:
 collection_groups:
 
 # Control which data sets are available to populate select and multiselect inputs.
-data_config: { contacts: { path: "src/data/contacts.json", parser: "json" } }
+data_config:
+  {
+    contacts:
+      { path: "src/data/contacts.json", parser: "json", url: "/contact" },
+  }
 
 # Base path to your source files, relative to the root folder of your repository.
 source:
