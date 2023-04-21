@@ -4,25 +4,19 @@
 # Collections are related sets of content files, typically grouped by folder.
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
-collections_config: {
-  posts: {
-    path: 'src/content/blog',
-    parser: 'front-matter'
-  }
-}
+collections_config:
+  { blog: { path: "src/content/blog", parser: "front-matter" } }
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
 collection_groups:
 
 # Control which data sets are available to populate select and multiselect inputs.
-data_config: {
-  contacts: {
-    path: 'src/data/contacts.json',
-    parser: 'json',
-    url: '/contact'
+data_config:
+  {
+    contacts:
+      { path: "src/data/contacts.json", parser: "json", url: "/contact" },
   }
-}
 
 # Base path to your source files, relative to the root folder of your repository.
 source:
@@ -30,10 +24,10 @@ source:
 # The locations of various types of files within your site.
 # Each path is relative to your site's source folder.
 paths:
-  data: ''
-  collections: ''
+  data: ""
+  collections: ""
   layouts: null
-  static: ''
+  static: ""
   uploads: uploads
 
 # Lets you control the look and behaviour of the Source Editor.
