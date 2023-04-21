@@ -6,7 +6,7 @@ const title = "Novelty Cycles Home";
 const description = "Novelty cycles home page, step in and explore our world.";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => Date.parse(b.data.date!) - Date.parse(a.data.date!)
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
 );
 ---
 
